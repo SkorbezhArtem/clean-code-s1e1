@@ -27,14 +27,17 @@ body {
   }
 
 }
-
+.header__figure {
+  margin: 0 0 1em 0;
+}
 .main-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.add-task__input {
+.add-task__input,
+.task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
