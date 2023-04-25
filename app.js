@@ -23,6 +23,7 @@ var createNewTaskElement = function (taskString) {
   var checkBox = document.createElement("input");//checkbx
   //label
   var label = document.createElement("label");//label
+  
   //input (text)
   var editInput = document.createElement("input");//text
   //button.edit
@@ -125,7 +126,9 @@ var taskCompleted = function () {
   //Append the task list item to the #completed-tasks
   var listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
+  listItem.children[1].classList.add("completed__label");
   bindTaskEvents(listItem, taskIncomplete);
+
 
 }
 
@@ -136,6 +139,7 @@ var taskIncomplete = function () {
   //When the checkbox is unchecked
   //Append the task list item to the #incomplete-tasks.
   var listItem = this.parentNode;
+  listItem.children[1].classList.remove("completed__label");
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
 }
