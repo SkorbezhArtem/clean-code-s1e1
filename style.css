@@ -27,9 +27,11 @@ body {
   }
 
 }
+
 .header__figure {
   margin: 0 0 1em 0;
 }
+
 .main-container {
   display: block;
   width: 500px;
@@ -81,7 +83,7 @@ body {
 
 /* Heading */
 .title,
-.add-task__label {
+.add-task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -109,7 +111,7 @@ body {
 }
 
 /* New Task */
-.add-task__label {
+.add-task__title {
   display: block;
   margin: 0 0 20px;
 }
